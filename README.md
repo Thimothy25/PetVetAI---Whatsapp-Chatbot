@@ -24,10 +24,6 @@ The project is built with **Node.js (Express)** and follows a professional **Ser
 * **Google Gemini API Key** (Get it from Google AI Studio)
 * **Fonnte Device Token** (Get it from Fonnte Dashboard)
 
-## 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/PetVetAI.git
-cd PetVetAI
 
 ## 📂 Project Structure
 
