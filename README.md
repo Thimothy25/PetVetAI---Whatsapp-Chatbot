@@ -1,45 +1,65 @@
 # 🐾 PetVetAI - WhatsApp Intelligent Assistant
 
-![Node.js](https://img.shields.io/badge/Node.js-Express-green) ![Architecture](https://img.shields.io/badge/Architecture-MVC%2FServices-blue) ![Gemini API](https://img.shields.io/badge/AI-Google%20Gemini-orange) ![Fonnte](https://img.shields.io/badge/WhatsApp-Fonnte-teal)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge) ![Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white) ![Fonnte](https://img.shields.io/badge/WhatsApp-Fonnte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 
 ## 📖 Overview
 
-**PetVetAI** is a machine learning-powered chatbot designed to operate on WhatsApp. It serves as an intelligent virtual assistant, utilizing **Google Gemini API** for natural language understanding (NLP) and **Fonnte** as the messaging bridge.
+Welcome to the **PetVetAI** repository.
 
-The project is built with **Node.js (Express)** and follows a professional **Service-Oriented Architecture**, separating the AI logic, external API integrations, and route handling for maximum scalability and maintainability.
-
-## ✨ Key Features
-
-* **Generative AI:** Powered by **Google Gemini** (LLM) to provide context-aware, human-like responses.
-* **WhatsApp Integration:** Real-time messaging capability using **Fonnte Webhooks**.
-* **Modular Architecture:** Business logic is isolated in the `Services` directory, making the codebase clean and easy to expand.
-* **Secure:** Uses environment variables to protect API keys and tokens.
-
-
-## 🚀 Installation & Setup
-
-## Prerequisites
-
-* **Node.js** (v14 or higher)
-* **Google Gemini API Key** (Get it from Google AI Studio)
-* **Fonnte Device Token** (Get it from Fonnte Dashboard)
-
+This project focuses on building an AI-powered Chatbot using **JavaScript (Node.js)** and **Google Gemini** as the LLM engine. It serves as a virtual veterinary assistant, bridging users on WhatsApp with AI analysis via **Fonnte Webhooks**.
 
 ## 📂 Project Structure
 
-This repository is organized to ensure clean code separation:
+**Important:** The code for this project follows a strict **Service-Oriented Architecture (MVC)**. Each folder represents a specific layer of the application logic.
 
-```text
-PETVETAI/
-├── bin/                 # Server executables (www)
-├── Controllers/         # Logic Handlers
-│   └── AIController.js  # Manages flow between User, AI, and WhatsApp
-├── Services/            # External API Integrations (Business Logic)
-│   ├── FonnteServices.js # Handles sending messages via Fonnte
-│   └── GeminiServices.js # Handles Google AI prompts & responses
-├── routes/              # API Endpoints
-│   ├── webhook.js       # Main entry for incoming WhatsApp messages
-│   └── index.js         # Base application routes
-├── public/              # Static assets
-├── .env                 # Environment variables (API Keys)
-└── app.js               # Main application config
+Please navigate the folders based on your development needs:
+
+* `Controllers/` (Handles logic flow between User, AI, and WhatsApp)
+* `Services/` (External API Integrations for Fonnte & Gemini)
+* `routes/` (API Endpoints & Webhook entry)
+* `bin/` & `app.js` (Server configuration)
+
+> **Architecture Note:**
+> We separate the *AI Logic* (Gemini) and *Messaging Logic* (Fonnte) into the `Services` folder to keep the code clean and modular.
+
+## 🛠️ Tech Stack
+
+* **Runtime:** Node.js
+* **Framework:** Express.js
+* **AI Engine:** Google Gemini API
+* **Messaging:** Fonnte Webhook
+* **Tools:** Ngrok (for local testing), Postman
+
+## 🚀 Getting Started
+
+To run the chatbot locally on your machine:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Thimothy25/PetVetAI.git](https://github.com/Thimothy25/PetVetAI.git)
+    cd PetVetAI
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment:**
+    * Create a `.env` file in the root directory.
+    * Add your `GEMINI_API_KEY` and `FONNTE_TOKEN`.
+
+4.  **Start the Server:**
+    ```bash
+    npm start
+    # or
+    node ./bin/www
+    ```
+
+5.  **Connect Webhook:**
+    * Use Ngrok to expose port 3000: `ngrok http 3000`
+    * Copy the URL to Fonnte Dashboard.
+
+## 📄 License
+
+This project is for educational purposes.
