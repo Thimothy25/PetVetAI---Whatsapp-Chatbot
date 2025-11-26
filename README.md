@@ -92,4 +92,4 @@ Set the URL to point to your webhook route (e.g., https://.../webhook).
 Contributions are welcome! Please ensure any new logic is placed in the appropriate Controller or Service file to maintain the architecture.
 
 📄 License
-This project is licensed under the MIT License.
+This code can be used by anyone, but make sure to contact the owner of this repository first.
