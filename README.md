@@ -15,15 +15,16 @@ The project is built with **Node.js (Express)** and follows a professional **Ser
 * **Modular Architecture:** Business logic is isolated in the `Services` directory, making the codebase clean and easy to expand.
 * **Secure:** Uses environment variables to protect API keys and tokens.
 
+
 ## 🚀 Installation & Setup
 
-### Prerequisites
+## Prerequisites
 
 * **Node.js** (v14 or higher)
 * **Google Gemini API Key** (Get it from Google AI Studio)
 * **Fonnte Device Token** (Get it from Fonnte Dashboard)
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/PetVetAI.git
 cd PetVetAI
