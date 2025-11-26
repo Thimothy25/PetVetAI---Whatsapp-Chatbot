@@ -65,4 +65,4 @@ To run the chatbot locally on your machine:
 
 ## 📄 License
 
-This project is for educational purposes.
+This project is for educational purposes Contact Me before using this code.
