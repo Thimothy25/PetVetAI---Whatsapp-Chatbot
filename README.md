@@ -8,27 +8,6 @@
 
 The project follows a robust **Service-Oriented Architecture**, ensuring a clean separation between the AI logic, message handling, and route definitions.
 
-## 📂 Project Structure
-
-This repository is organized to ensure scalability and maintainability:
-
-```text
-PETVETAI/
-├── bin/                 # Server executables (www)
-├── Controllers/         # Logic Handlers
-│   └── AIController.js  # Manages the flow between User, AI, and WhatsApp
-├── Services/            # External API Integrations (Business Logic)
-│   ├── GeminiServices.js # Handles communication with Google Gemini API
-│   └── FonnteServices.js # Handles message sending via Fonnte API
-├── routes/              # API Endpoints
-│   ├── webhook.js       # Main entry point for incoming WhatsApp messages
-│   ├── messageroutes.js # Route definitions for messaging features
-│   └── index.js         # Base application routes
-├── public/              # Static assets
-├── views/               # View templates (if applicable)
-├── .env                 # Environment variables (API Keys)
-└── app.js               # Main application configuration
-
 
 ✨ Key Features
 Smart AI Responses: Integration with Google Gemini via GeminiServices.js.
@@ -93,3 +72,30 @@ Contributions are welcome! Please ensure any new logic is placed in the appropri
 
 📄 License
 This code can be used by anyone, but make sure to contact the owner of this repository first.
+
+
+## 📂 Project Structure
+
+This repository is organized to ensure scalability and maintainability:
+
+```text
+PETVETAI/
+├── bin/                 # Server executables (www)
+├── Controllers/         # Logic Handlers
+│   └── AIController.js  # Manages the flow between User, AI, and WhatsApp
+├── Services/            # External API Integrations (Business Logic)
+│   ├── GeminiServices.js # Handles communication with Google Gemini API
+│   └── FonnteServices.js # Handles message sending via Fonnte API
+├── routes/              # API Endpoints
+│   ├── webhook.js       # Main entry point for incoming WhatsApp messages
+│   ├── messageroutes.js # Route definitions for messaging features
+│   └── index.js         # Base application routes
+├── public/              # Static assets
+├── views/               # View templates (if applicable)
+├── .env                 # Environment variables (API Keys)
+└── app.js               # Main application configuration 
+
+
+
+
+
