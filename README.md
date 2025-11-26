@@ -28,3 +28,68 @@ PETVETAI/
 ├── views/               # View templates (if applicable)
 ├── .env                 # Environment variables (API Keys)
 └── app.js               # Main application configuration
+
+
+✨ Key Features
+Smart AI Responses: Integration with Google Gemini via GeminiServices.js.
+
+WhatsApp Webhook: Real-time message processing via webhook.js.
+
+Modular Services: Clean code structure where external APIs (Fonnte & Gemini) are isolated in the Services directory.
+
+Express Framework: Built on the robust Express.js framework for Node.js.
+
+🚀 Installation & Setup
+Prerequisites
+Node.js (v14 or higher)
+
+Google Gemini API Key
+
+Fonnte Account & Device Token
+
+Step-by-Step Guide
+Clone the Repository
+
+Bash
+
+git clone [https://github.com/your-username/PetVetAI.git](https://github.com/your-username/PetVetAI.git)
+cd PetVetAI
+Install Dependencies
+
+Bash
+
+npm install
+Configure Environment Create a .env file in the root directory and add your credentials:
+
+Code snippet
+
+PORT=3000
+GEMINI_API_KEY=your_google_gemini_key
+FONNTE_TOKEN=your_fonnte_token
+Run the Application
+
+Bash
+
+# Run normally
+npm start
+
+# Or specifically
+node ./bin/www
+🔗 Webhook Configuration (Fonnte)
+To connect your local bot to WhatsApp:
+
+Run the app locally.
+
+Use Ngrok to expose your port: ngrok http 3000
+
+Copy the generated HTTPS URL (e.g., https://random-id.ngrok-free.app).
+
+Go to the Fonnte Dashboard > Webhooks.
+
+Set the URL to point to your webhook route (e.g., https://.../webhook).
+
+🤝 Contributing
+Contributions are welcome! Please ensure any new logic is placed in the appropriate Controller or Service file to maintain the architecture.
+
+📄 License
+This project is licensed under the MIT License.
