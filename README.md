@@ -59,6 +59,9 @@ To run the chatbot locally on your machine:
 5.  **Connect Webhook:**
     * Use Ngrok to expose port 3000: `ngrok http 3000`
     * Copy the URL to Fonnte Dashboard.
+## Dasboard Preview
+
+<img width="1418" height="997" alt="image" src="https://github.com/user-attachments/assets/673d5a00-1e0a-4252-963c-e115d7ff2f23" />
 
 ## 📄 License
 
