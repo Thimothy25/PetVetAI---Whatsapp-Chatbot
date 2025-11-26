@@ -8,6 +8,26 @@
 
 The project is built with **Node.js (Express)** and follows a professional **Service-Oriented Architecture**, separating the AI logic, external API integrations, and route handling for maximum scalability and maintainability.
 
+## ✨ Key Features
+
+* **Generative AI:** Powered by **Google Gemini** (LLM) to provide context-aware, human-like responses.
+* **WhatsApp Integration:** Real-time messaging capability using **Fonnte Webhooks**.
+* **Modular Architecture:** Business logic is isolated in the `Services` directory, making the codebase clean and easy to expand.
+* **Secure:** Uses environment variables to protect API keys and tokens.
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+
+* **Node.js** (v14 or higher)
+* **Google Gemini API Key** (Get it from Google AI Studio)
+* **Fonnte Device Token** (Get it from Fonnte Dashboard)
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/PetVetAI.git
+cd PetVetAI
+
 ## 📂 Project Structure
 
 This repository is organized to ensure clean code separation:
